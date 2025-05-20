@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com: Online Shopping</title>
+</head>
+
+<body bgcolor="#EAEDED" text="#0F1111" link="#007185" vlink="#007185" alink="#FF9900" style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <!-- LOGIN SECTION -->
+    <details open id="login-section">
+        <summary style="display: none;">Login</summary>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <!-- Header -->
+            <tr>
+                <td align="center" style="padding: 20px;">
+                    <div style="font-size: 28px; font-weight: bold; color: #FF9900;">amazon</div>
+                </td>
+            </tr>
+
+            <!-- Login Form -->
+            <tr>
+                <td align="center">
+                    <table width="350" cellpadding="20" cellspacing="0" border="0" bgcolor="white" style="border: 1px solid #dddddd; border-radius: 4px; margin-bottom: 30px;">
+                        <tr>
+                            <td>
+                                <font size="5" color="#000000" face="Arial">Sign in</font>
+
+                                <div style="margin-top: 20px; margin-bottom: 15px;">
+                                    <label for="email">
+                                        <font size="2" color="#111111" face="Arial"><b>Email or mobile phone number</b></font>
+                                    </label><br>
+                                    <input type="text" id="email" name="email" style="width: 100%; padding: 8px; border: 1px solid #a6a6a6; border-radius: 3px; font-size: 14px; margin-top: 5px;">
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td><label for="password">
+                                                    <font size="2" color="#111111" face="Arial"><b>Password</b></font>
+                                                </label></td>
+                                            <td align="right"><a href="#">
+                                                    <font size="2" color="#0066c0" face="Arial">Forgot Password</font>
+                                                </a></td>
+                                        </tr>
+                                    </table>
+                                    <input type="password" id="password" name="password" style="width: 100%; padding: 8px; border: 1px solid #a6a6a6; border-radius: 3px; font-size: 14px; margin-top: 5px;">
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <!-- This link will close login section and open home section -->
+                                    <a href="#" onclick="document.getElementById('login-section').removeAttribute('open'); document.getElementById('home-section').setAttribute('open', ''); return false;" style="display: block; width: 100%; padding: 10px 0; background-color: #FFD814; border: none; border-radius: 4px; font-size: 14px; font-weight: normal; color: #111111; text-align: center; text-decoration: none;">Sign in</a>
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <font size="2" color="#565656" face="Arial">
+                                        By continuing, you agree to Amazon's <a href="#">
+                                            <font color="#0066c0">Conditions of Use</font>
+                                        </a> and <a href="#">
+                                            <font color="#0066c0">Privacy Notice</font>
+                                        </a>.
+                                    </font>
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <input type="checkbox" id="keep-signed-in" style="margin-right: 5px;">
+                                    <label for="keep-signed-in">
+                                        <font size="2" color="#111111" face="Arial">Keep me signed in.</font>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div style="width: 350px; margin: 0 auto; text-align: center; position: relative; margin-bottom: 20px;">
+                        <hr style="border: none; height: 1px; background-color: #e7e7e7; margin: 0;">
+                        <span style="position: absolute; top: -10px; background-color: #ffffff; padding: 0 10px; font-size: 13px; color: #767676;">New to Amazon?</span>
+                    </div>
+
+                    <div style="width: 350px; margin: 0 auto; margin-bottom: 30px;">
+                        <a href="#" style="display: block; width: 100%; padding: 10px 0; background-color: #f0f2f2; border: 1px solid #d5d9d9; border-radius: 4px; font-size: 14px; font-weight: normal; color: #111111; text-align: center; text-decoration: none;">Create your Amazon account</a>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="white" style="padding: 30px 0; border-top: 1px solid #e7e7e7;">
+                        <tr>
+                            <td align="center">
+                                <div style="width: 350px; margin: 0 auto; text-align: center;">
+                                    <a href="#">
+                                        <font size="2" color="#0066c0" face="Arial">Conditions of Use</font>
+                                    </a>
+                                    <font size="2" color="#0066c0" face="Arial">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                                    <a href="#">
+                                        <font size="2" color="#0066c0" face="Arial">Privacy Notice</font>
+                                    </a>
+                                    <font size="2" color="#0066c0" face="Arial">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                                    <a href="#">
+                                        <font size="2" color="#0066c0" face="Arial">Help</font>
+                                    </a>
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    <font size="2" color="#767676" face="Arial">© 1996-2025, Amazon.com, Inc. or its affiliates</font>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </details>
+
+    <!-- HOME SECTION -->
+    <details id="home-section">
+        <summary style="display: none;">Home</summary>
+        <!-- Top Navigation Bar -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#131921" style="color: white; padding: 10px;">
+            <tr>
+                <td width="10%" align="center">
+                    <font size="5" color="#FF9900" face="Arial"><b>amazon</b></font>
+                </td>
+                <td width="40%">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="15%">
+                                <select style="width: 100%; padding: 8px; background-color: #F3F3F3; border: none; font-size: 14px;">
+                                    <option>All</option>
+                                    <option>Books</option>
+                                    <option>Electronics</option>
+                                </select>
+                            </td>
+                            <td width="70%">
+                                <input type="text" placeholder="Search Amazon" style="width: 100%; padding: 8px; border: none; font-size: 14px;">
+                            </td>
+                            <td width="15%" bgcolor="#FEBD69" align="center">
+                                <font size="4" color="black">🔍</font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="50%" align="right">
+                    <table cellpadding="0" cellspacing="0" border="0" align="right">
+                        <tr>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="2" color="white" face="Arial">Hello, Sign in</font><br>
+                                <font size="2" color="white" face="Arial"><b>Account & Lists</b></font>
+                            </td>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="2" color="white" face="Arial">Returns</font><br>
+                                <font size="2" color="white" face="Arial"><b>& Orders</b></font>
+                            </td>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="4" color="white" face="Arial">🛒</font>
+                                <font size="2" color="white" face="Arial"><b>Cart</b></font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Secondary Navigation -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#232F3E" style="color: white; padding: 8px 10px;">
+            <tr>
+                <td>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">All</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Today's Deals</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Customer Service</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Registry</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Gift Cards</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Sell</font>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Hero Banner -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 15px;">
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl-g8Wh6XyXqoPb710U7j2vcyH-2RdtKgOeQ&s" alt="Hero Banner" width="100%" height="300">
+                </td>
+            </tr>
+        </table>
+
+        <!-- Product Grid -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td colspan="4" style="padding: 15px 15px 5px 15px;">
+                    <font size="5" color="#0F1111" face="Arial">Today's Deals</font>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" align="center" valign="top">
+                    <!-- This link will close home section and open product section -->
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG7ApGEHObwm6BAQlBstlbmTdYDT4dVHkX5w&s" alt="Product 1" width="200" height="200"><br>
+                        <font size="3" color="#0F1111" face="Arial">Wireless Earbuds</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$59.99</b></font><br>
+                        <font size="2" color="#565959" face="Arial"><strike>$99.99</strike></font><br>
+                        <font size="2" color="#007600" face="Arial">Save 40%</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLl5jOfnfl4uhNQaC2ysyZPc17JAG-OWxRw&s" alt="Product 2" width="200" height="200"><br>
+                        <font size="3" color="#0F1111" face="Arial">Smart Watch</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$129.99</b></font><br>
+                        <font size="2" color="#565959" face="Arial"><strike>$179.99</strike></font><br>
+                        <font size="2" color="#007600" face="Arial">Save 28%</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="data:image/jpeg;base64,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" alt="Product 3" width="200" height="200"><br>
+                        <font size="3" color="#0F1111" face="Arial">Bluetooth Speaker</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$49.99</b></font><br>
+                        <font size="2" color="#565959" face="Arial"><strike>$79.99</strike></font><br>
+                        <font size="2" color="#007600" face="Arial">Save 38%</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="data:image/jpeg;base64,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" alt="Product 4" width="200" height="200"><br>
+                        <font size="3" color="#0F1111" face="Arial">4K Smart TV</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$399.99</b></font><br>
+                        <font size="2" color="#565959" face="Arial"><strike>$599.99</strike></font><br>
+                        <font size="2" color="#007600" face="Arial">Save 33%</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Product Categories -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td colspan="4" style="padding: 15px 15px 5px 15px;">
+                    <font size="5" color="#0F1111" face="Arial">Shop by Category</font>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT751CK9sThoq5NkX5yGcPjCpeL7yd5ew-cI6mF1uTFTkW6Duv0OHuiYR4&s" alt="Electronics" width="150" height="150"><br>
+                        <font size="3" color="#0F1111" face="Arial">Electronics</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHKYF7tm3wlj69PStkmXN9UEmnZ4fpBYKfw&s" alt="Home & Kitchen" width="150" height="150"><br>
+                        <font size="3" color="#0F1111" face="Arial">Home & Kitchen</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="data:image/jpeg;base64,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" alt="Books" width="150" height="150"><br>
+                        <font size="3" color="#0F1111" face="Arial">Books</font>
+                    </a>
+                </td>
+                <td width="25%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="data:image/jpeg;base64,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" alt="Fashion" width="150" height="150"><br>
+                        <font size="3" color="#0F1111" face="Arial">Fashion</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Featured Products -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td colspan="3" style="padding: 15px 15px 5px 15px;">
+                    <font size="5" color="#0F1111" face="Arial">Featured Products</font>
+                </td>
+            </tr>
+            <tr>
+                <td width="33.33%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://www.hindustantimes.com/ht-img/img/2024/11/07/550x309/1730780862086902ba1e31759444ba2c92aea91953104_1730975620781_1730975630221.jpg" alt="Featured 1" width="250" height="250"><br>
+                        <font size="3" color="#0F1111" face="Arial">Latest Smartphone</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$899.99</b></font><br>
+                        <font size="2" color="#007600" face="Arial">Free Prime Delivery</font>
+                    </a>
+                </td>
+                <td width="33.33%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="data:image/jpeg;base64,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" alt="Featured 2" width="250" height="250"><br>
+                        <font size="3" color="#0F1111" face="Arial">Laptop Computer</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$1,299.99</b></font><br>
+                        <font size="2" color="#007600" face="Arial">Free Prime Delivery</font>
+                    </a>
+                </td>
+                <td width="33.33%" align="center" valign="top">
+                    <a href="#" onclick="document.getElementById('home-section').removeAttribute('open'); document.getElementById('product-section').setAttribute('open', ''); return false;" style="text-decoration: none;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIhjcERfAkf4SBSmmAqO9B3Yw-_vbyZxHAg&s" alt="Featured 3" width="250" height="250"><br>
+                        <font size="3" color="#0F1111" face="Arial">Robot Vacuum</font><br>
+                        <font size="4" color="#CC0C39" face="Arial"><b>$249.99</b></font><br>
+                        <font size="2" color="#007600" face="Arial">Free Prime Delivery</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <!-- Back to top button -->
+            <tr>
+                <td align="center" bgcolor="#37475A" style="padding: 15px;">
+                    <a href="#top">
+                        <font size="2" color="white" face="Arial">Back to top</font>
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Footer Links -->
+            <tr>
+                <td bgcolor="#232F3E" style="padding: 30px 20px; color: white;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Get to Know Us</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Careers</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">About Amazon</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Investor Relations</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Make Money with Us</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Sell products on Amazon</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Sell on Amazon Business</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Become an Affiliate</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Amazon Payment Products</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Amazon Business Card</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Shop with Points</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Reload Your Balance</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Let Us Help You</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Your Account</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Your Orders</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Shipping Rates & Policies</font>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Copyright -->
+            <tr>
+                <td align="center" bgcolor="#131A22" style="padding: 20px; color: white;">
+                    <font size="2" color="white" face="Arial">© 1996-2025, Amazon.com, Inc. or its affiliates</font>
+                </td>
+            </tr>
+        </table>
+    </details>
+
+    <!-- PRODUCT DETAILS SECTION -->
+    <details id="product-section">
+        <summary style="display: none;">Product Details</summary>
+        <!-- Top Navigation Bar -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#131921" style="color: white; padding: 10px;">
+            <tr>
+                <td width="10%" align="center">
+                    <font size="5" color="#FF9900" face="Arial"><b>amazon</b></font>
+                </td>
+                <td width="40%">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="15%">
+                                <select style="width: 100%; padding: 8px; background-color: #F3F3F3; border: none; font-size: 14px;">
+                                    <option>All</option>
+                                    <option>Books</option>
+                                    <option>Electronics</option>
+                                </select>
+                            </td>
+                            <td width="70%">
+                                <input type="text" placeholder="Search Amazon" style="width: 100%; padding: 8px; border: none; font-size: 14px;">
+                            </td>
+                            <td width="15%" bgcolor="#FEBD69" align="center">
+                                <font size="4" color="black">🔍</font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="50%" align="right">
+                    <table cellpadding="0" cellspacing="0" border="0" align="right">
+                        <tr>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="2" color="white" face="Arial">Hello, Sign in</font><br>
+                                <font size="2" color="white" face="Arial"><b>Account & Lists</b></font>
+                            </td>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="2" color="white" face="Arial">Returns</font><br>
+                                <font size="2" color="white" face="Arial"><b>& Orders</b></font>
+                            </td>
+                            <td align="center" style="padding: 0 15px;">
+                                <font size="4" color="white" face="Arial">🛒</font>
+                                <font size="2" color="white" face="Arial"><b>Cart</b></font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Secondary Navigation -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#232F3E" style="color: white; padding: 8px 10px;">
+            <tr>
+                <td>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">All</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Today's Deals</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Customer Service</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Registry</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Gift Cards</font>
+                    <font size="2" color="white" face="Arial" style="margin: 0 10px;">Sell</font>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Back to Results -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td>
+                    <!-- This link will close product section and open home section -->
+                    <a href="#" onclick="document.getElementById('product-section').removeAttribute('open'); document.getElementById('home-section').setAttribute('open', ''); return false;">
+                        <font size="2" color="#007185" face="Arial">← Back to results</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Product Details -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <!-- Product Images -->
+                <td width="40%" valign="top">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Wireless Earbuds" width="400" height="400"><br><br>
+                    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+                        <tr>
+                            <td width="25%" align="center">
+                                <img src="/placeholder.svg?height=80&width=80" alt="Thumbnail 1" width="80" height="80" border="1" bordercolor="#DDD">
+                            </td>
+                            <td width="25%" align="center">
+                                <img src="/placeholder.svg?height=80&width=80" alt="Thumbnail 2" width="80" height="80" border="1" bordercolor="#DDD">
+                            </td>
+                            <td width="25%" align="center">
+                                <img src="/placeholder.svg?height=80&width=80" alt="Thumbnail 3" width="80" height="80" border="1" bordercolor="#DDD">
+                            </td>
+                            <td width="25%" align="center">
+                                <img src="/placeholder.svg?height=80&width=80" alt="Thumbnail 4" width="80" height="80" border="1" bordercolor="#DDD">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- Product Information -->
+                <td width="40%" valign="top">
+                    <font size="5" color="#0F1111" face="Arial">Premium Wireless Earbuds with Noise Cancellation</font><br><br>
+                    <a href="#">
+                        <font size="2" color="#007185" face="Arial">Visit the TechBrand Store</font>
+                    </a><br><br>
+                    <font size="4" color="#FF9900" face="Arial">★★★★★</font>
+                    <a href="#">
+                        <font size="2" color="#007185" face="Arial">4,721 ratings</font>
+                    </a><br>
+
+                    <hr>
+
+                    <font size="2" color="#565959" face="Arial">Price: </font>
+                    <font size="4" color="#B12704" face="Arial"><b>$59.99</b></font>
+                    <font size="2" color="#565959" face="Arial"> & FREE Returns</font><br>
+
+                    <font size="2" color="#565959" face="Arial">List Price: </font>
+                    <font size="2" color="#565959" face="Arial"><strike>$99.99</strike></font><br>
+
+                    <font size="2" color="#007600" face="Arial">You Save: $40.00 (40%)</font><br>
+
+                    <hr>
+
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="30%">
+                                <font size="2" color="#565959" face="Arial">Brand</font>
+                            </td>
+                            <td>
+                                <font size="2" color="#0F1111" face="Arial">TechBrand</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <font size="2" color="#565959" face="Arial">Color</font>
+                            </td>
+                            <td>
+                                <font size="2" color="#0F1111" face="Arial">Black</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <font size="2" color="#565959" face="Arial">Connectivity</font>
+                            </td>
+                            <td>
+                                <font size="2" color="#0F1111" face="Arial">Bluetooth 5.2</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <font size="2" color="#565959" face="Arial">Battery Life</font>
+                            </td>
+                            <td>
+                                <font size="2" color="#0F1111" face="Arial">Up to 30 hours</font>
+                            </td>
+                        </tr>
+                    </table><br>
+
+                    <font size="3" color="#0F1111" face="Arial"><b>About this item:</b></font><br>
+                    <ul>
+                        <li>
+                            <font size="2" color="#0F1111" face="Arial">Active Noise Cancellation blocks outside noise</font>
+                        </li>
+                        <li>
+                            <font size="2" color="#0F1111" face="Arial">Transparency mode for hearing what's happening around you</font>
+                        </li>
+                        <li>
+                            <font size="2" color="#0F1111" face="Arial">Sweat and water resistant (IPX4)</font>
+                        </li>
+                        <li>
+                            <font size="2" color="#0F1111" face="Arial">Adaptive EQ automatically tunes music to your ears</font>
+                        </li>
+                        <li>
+                            <font size="2" color="#0F1111" face="Arial">Touch control for music and calls</font>
+                        </li>
+                    </ul>
+                </td>
+
+                <!-- Buy Box -->
+                <td width="20%" valign="top">
+                    <table width="100%" cellpadding="15" cellspacing="0" border="1" bordercolor="#DDD" style="border-radius: 8px;">
+                        <tr>
+                            <td>
+                                <font size="4" color="#B12704" face="Arial"><b>$59.99</b></font><br><br>
+                                <font size="2" color="#007600" face="Arial"><b>FREE delivery</b> Tomorrow</font><br><br>
+                                <font size="2" color="#007600" face="Arial">In Stock</font><br><br>
+                                <select style="width: 100%; padding: 8px; border: 1px solid #D5D9D9; border-radius: 8px; background-color: #F0F2F2; font-size: 14px;">
+                                    <option>Qty: 1</option>
+                                    <option>Qty: 2</option>
+                                    <option>Qty: 3</option>
+                                    <option>Qty: 4</option>
+                                    <option>Qty: 5</option>
+                                </select><br><br>
+                                <button style="width: 100%; padding: 8px 0; background-color: #FFD814; border: none; border-radius: 20px; font-size: 14px; cursor: pointer;">
+                                    Add to Cart
+                                </button><br><br>
+                                <button style="width: 100%; padding: 8px 0; background-color: #FFA41C; border: none; border-radius: 20px; font-size: 14px; cursor: pointer;">
+                                    Buy Now
+                                </button><br><br>
+                                <font size="2" color="#565959" face="Arial">Ships from</font>
+                                <font size="2" color="#0F1111" face="Arial">Amazon.com</font><br>
+                                <font size="2" color="#565959" face="Arial">Sold by</font>
+                                <font size="2" color="#0F1111" face="Arial">TechBrand</font><br><br>
+                                <font size="2" color="#565959" face="Arial">Return policy: </font>
+                                <a href="#">
+                                    <font size="2" color="#007185" face="Arial">Eligible for Return, Refund or Replacement within 30 days</font>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Product Description -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td>
+                    <font size="5" color="#0F1111" face="Arial">Product Description</font><br><br>
+                    <font size="2" color="#0F1111" face="Arial">
+                        Experience premium sound quality with our latest wireless earbuds. Featuring active noise cancellation technology,
+                        these earbuds block out external noise so you can focus on your music, podcasts, or calls without distractions.
+                    </font><br><br>
+                    <font size="2" color="#0F1111" face="Arial">
+                        With up to 8 hours of listening time on a single charge and an additional 22 hours with the charging case,
+                        you can enjoy your audio content all day long. The earbuds are sweat and water-resistant (IPX4 rated),
+                        making them perfect for workouts and outdoor activities.
+                    </font><br><br>
+                    <font size="2" color="#0F1111" face="Arial">
+                        The intuitive touch controls allow you to play/pause music, answer calls, and activate voice assistants with a simple tap.
+                        The earbuds also feature transparency mode, which lets you hear your surroundings when needed without removing the earbuds.
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Customer Reviews -->
+        <table width="100%" cellpadding="15" cellspacing="0" border="0" bgcolor="white" style="margin-bottom: 15px;">
+            <tr>
+                <td>
+                    <font size="5" color="#0F1111" face="Arial">Customer Reviews</font><br><br>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="20%" align="center" valign="top">
+                                <font size="7" color="#0F1111" face="Arial"><b>4.7</b></font><br>
+                                <font size="4" color="#FF9900" face="Arial">★★★★★</font><br>
+                                <font size="2" color="#565959" face="Arial">4,721 global ratings</font>
+                            </td>
+                            <td width="80%">
+                                <!-- Review 1 -->
+                                <table width="100%" cellpadding="10" cellspacing="0" border="0" style="border-bottom: 1px solid #DDD;">
+                                    <tr>
+                                        <td>
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <font size="2" color="#0F1111" face="Arial"><b>John D.</b></font>
+                                                        <font size="2" color="#565959" face="Arial"> - Verified Purchase</font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <font size="2" color="#FF9900" face="Arial">★★★★★</font><br>
+                                            <font size="3" color="#0F1111" face="Arial"><b>Great sound quality and battery life!</b></font><br>
+                                            <font size="2" color="#565959" face="Arial">Reviewed in the United States on May 15, 2025</font><br><br>
+                                            <font size="2" color="#0F1111" face="Arial">
+                                                These earbuds are amazing! The sound quality is excellent with deep bass and clear highs.
+                                                The noise cancellation works really well, especially on airplanes and in noisy environments.
+                                                Battery life is impressive - I can go almost two full days with moderate use before needing to recharge.
+                                                The fit is comfortable even for long listening sessions. Highly recommend!
+                                            </font>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Review 2 -->
+                                <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <font size="2" color="#0F1111" face="Arial"><b>Sarah M.</b></font>
+                                                        <font size="2" color="#565959" face="Arial"> - Verified Purchase</font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <font size="2" color="#FF9900" face="Arial">★★★★☆</font><br>
+                                            <font size="3" color="#0F1111" face="Arial"><b>Good earbuds with minor issues</b></font><br>
+                                            <font size="2" color="#565959" face="Arial">Reviewed in the United States on May 10, 2025</font><br><br>
+                                            <font size="2" color="#0F1111" face="Arial">
+                                                Overall, I'm happy with these earbuds. The sound quality is good and the noise cancellation works well.
+                                                My only complaint is that the touch controls can be a bit sensitive sometimes, causing accidental pauses
+                                                when adjusting the earbuds. Battery life is as advertised. For the price, these are a good value.
+                                            </font>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <!-- Back to top button -->
+            <tr>
+                <td align="center" bgcolor="#37475A" style="padding: 15px;">
+                    <a href="#top">
+                        <font size="2" color="white" face="Arial">Back to top</font>
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Footer Links -->
+            <tr>
+                <td bgcolor="#232F3E" style="padding: 30px 20px; color: white;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Get to Know Us</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Careers</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">About Amazon</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Investor Relations</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Make Money with Us</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Sell products on Amazon</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Sell on Amazon Business</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Become an Affiliate</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Amazon Payment Products</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Amazon Business Card</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Shop with Points</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Reload Your Balance</font>
+                                </a>
+                            </td>
+                            <td width="25%" valign="top">
+                                <font size="3" color="white" face="Arial"><b>Let Us Help You</b></font><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Your Account</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Your Orders</font>
+                                </a><br><br>
+                                <a href="#">
+                                    <font size="2" color="#DDD" face="Arial">Shipping Rates & Policies</font>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Copyright -->
+            <tr>
+                <td align="center" bgcolor="#131A22" style="padding: 20px; color: white;">
+                    <font size="2" color="white" face="Arial">© 1996-2025, Amazon.com, Inc. or its affiliates</font>
+                </td>
+            </tr>
+        </table>
+    </details>
+
+</body>
+
+</html>
