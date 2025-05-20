@@ -25,6 +25,7 @@ How It Works
 3)Each product detail page includes a "Back to Home" link to return.
 
 Usage
+
 1)Download or copy the HTML file (amazon_clone.html).
 
 2)Open it in any web browser.
