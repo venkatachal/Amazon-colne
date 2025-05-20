@@ -1,7 +1,9 @@
 **Amazon Clone – HTML Only (No CSS/JS)**
+
 This is a simple Amazon-like website clone built entirely using pure HTML only — no CSS or JavaScript is used. All navigation and styling are handled using basic HTML tags and attributes like <font>, color, size, etc.
 
  Features
+
 ✅ Login Page with username and password fields
 
 ✅ Home Page displaying product list with links
@@ -15,6 +17,7 @@ This is a simple Amazon-like website clone built entirely using pure HTML only �
 ✅ No CSS or JavaScript – basic styling using only HTML
 
 How It Works
+
 1)Clicking the "Sign In" button on the login form navigates to the home page (#home).
 
 2)Clicking on a product name opens its details section using anchor links (#product1, #product2, etc.).
